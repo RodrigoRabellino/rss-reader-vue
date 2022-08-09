@@ -25,7 +25,20 @@ const { current } = useFeedStore();
   overflow-y: scroll;
   gap: 1rem;
 }
+summary {
+  font-weight: 500;
+}
+
 hr {
   margin-top: 1rem;
+}
+</style>
+
+<style>
+img,
+figure {
+  margin: 0 auto;
+  max-width: min(100%, 500px);
+  display: block;
 }
 </style>
