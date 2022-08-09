@@ -11,8 +11,21 @@ const { current } = useFeedStore();
         {{ post.title }}
       </summary>
       <div v-html="post.content"></div>
+      <hr />
     </details>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow-y: scroll;
+  gap: 1rem;
+}
+hr {
+  margin-top: 1rem;
+}
+</style>

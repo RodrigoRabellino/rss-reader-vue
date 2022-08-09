@@ -6,9 +6,21 @@ import Posts from "./Posts.vue";
 <template>
   <div class="main__container">
     <Header />
-    <SideBar />
-    <Posts />
+    <div class="body__container">
+      <SideBar />
+      <Posts />
+    </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.main__container {
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+.body__container {
+  display: flex;
+  height: 100%;
+}
+</style>

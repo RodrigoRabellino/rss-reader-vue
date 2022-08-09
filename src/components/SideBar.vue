@@ -14,4 +14,28 @@ const handleClick = (source) => store.loadSource(source);
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.sidebar {
+  width: 200px;
+  background-color: rgb(36, 36, 36);
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: sticky;
+  left: 0;
+}
+a {
+  transition: 0.4s;
+  color: violet;
+  text-decoration: none;
+  font-size: 20px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+a:hover {
+  transition: 0.4s;
+  text-decoration: underline;
+}
+</style>

@@ -5,10 +5,11 @@ import RSSReader from "./components/RSSReader.vue";
   <RSSReader />
 </template>
 
-<style scoped>
-.app {
+<style>
+#app {
   width: 100vw;
   height: 100vh;
   background-color: #eaeaea;
+  color: rgb(36, 36, 36);
 }
 </style>
